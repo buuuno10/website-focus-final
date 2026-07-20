@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { TermsModal } from "./TermsModal";
+
 export function Footer() {
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
+
   return (
     <footer className="border-t border-border bg-surface-1">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-6 px-6 py-10">
@@ -15,9 +20,12 @@ export function Footer() {
           <a href="#" className="hover:text-foreground">
             Privacidade
           </a>
-          <a href="#" className="hover:text-foreground">
+          <button
+            onClick={() => setIsTermsOpen(true)}
+            className="hover:text-foreground cursor-pointer transition-colors"
+          >
             Termos
-          </a>
+          </button>
           <a href="mailto:hello@90focus.app" className="hover:text-foreground">
             Contacto
           </a>
@@ -26,6 +34,8 @@ export function Footer() {
           <span>© {new Date().getFullYear()} 90focus</span>
         </div>
       </div>
+
+      <TermsModal isOpen={isTermsOpen} onOpenChange={setIsTermsOpen} />
     </footer>
   );
 }

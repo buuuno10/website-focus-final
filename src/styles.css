@@ -55,22 +55,22 @@
   --popover-foreground: oklch(0.97 0.005 260);
 
   /* Brand neon green from logo */
-  --brand: #00D492;
+  --brand: #00d492;
   --brand-foreground: oklch(0.14 0.005 260);
 
-  --primary: #00D492;
+  --primary: #00d492;
   --primary-foreground: oklch(0.14 0.005 260);
   --secondary: oklch(0.21 0.008 260);
   --secondary-foreground: oklch(0.97 0.005 260);
   --muted: oklch(0.21 0.008 260);
   --muted-foreground: oklch(0.68 0.01 260);
-  --accent: #00D492;
+  --accent: #00d492;
   --accent-foreground: oklch(0.14 0.005 260);
   --destructive: oklch(0.62 0.24 27);
   --destructive-foreground: oklch(0.97 0.005 260);
   --border: oklch(1 0 0 / 8%);
   --input: oklch(1 0 0 / 12%);
-  --ring: #00D492;
+  --ring: #00d492;
 
   --shadow-glow: 0 0 40px -8px rgba(0, 212, 146, 0.55);
   --gradient-chrome: linear-gradient(
